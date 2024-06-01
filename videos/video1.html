@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #videoPlayer {
+      width: 640px;
+      height: 480px;
+    }
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .btn-back:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    document.getElementById('videoPlayer').addEventListener('ended', function() {
+      window.location.href = 'index.html';
+    });
+  </script>
+  <title>Video 2</title>
+</head>
+<body>
+  <video width="800" height="480" controls>
+    <source src="Metricef_Done.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video><br><br>
+  <a href="index.html">Back to homepage</a>
+</body>
+</html>
+ -->
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Video 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #videoContainer {
+      text-align: center;
+    }
+    #videoPlayer {
+      /*width: 1200px;
+      height: 500px;*/
+       width: 100%; /* Set video width to 100% */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 100%; /* Ensure video doesn't exceed container width */
+    }
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .btn-back:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="videoContainer">
+    <video id="videoPlayer" controls autoplay playsinline>
+    <!-- <video id="videoPlayer" controls autoplay> -->
+      <source src="Intra Utreine_water based_Done.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <br>
+<!--     <a href="https://metricef.github.io/videos_an/" class="btn-back">Back to homepage</a> -->
+  </div>
+
+  <script>
+    document.getElementById('videoPlayer').addEventListener('ended', function() {
+      window.location.href = 'https://metricef.github.io/videos_an/';
+    });
+  </script>
+</body>
+</html>
